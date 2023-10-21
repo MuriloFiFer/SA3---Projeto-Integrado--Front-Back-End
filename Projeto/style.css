@@ -1,0 +1,54 @@
+#bar1{
+    background-color: #9EDC4B;
+    width: 100%;  
+}
+
+#itensBar1{
+    display: flex;
+    align-items: center;
+  
+    height: 5vh;;
+}
+
+#logoBar{
+    margin-left: 15%;
+    height: 5vh;
+
+}
+#areaBuscar{      
+    margin-left: 3%;
+        background-color:white;
+        border:solid 1px;
+        border-radius:15px;
+        width:200px;
+        height: 3vh;
+
+      }  
+
+#IconLupa{
+    
+    width: 06%;
+    height: 5vh;
+}
+
+#iconBuy{    
+    width: 4%;
+    height: 4vh;;
+}
+
+#iconCadastro{    
+    margin-left: 5%;
+    width: 4%;
+    height: 4vh;;
+}
+
+
+
+#bar2{
+    background-color: #9EDC4B;
+    width: 100%;
+    height: 05vh;
+ 
+}
+
+
