@@ -1,0 +1,52 @@
+.botoes {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 10px;
+    word-spacing: 8px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgba(201, 197, 197, 0.671);
+    transition: .3s;
+    cursor: pointer;
+  }
+
+
+   
+
+#botao1{
+    background-color: D9D9D9;
+    width: 25%;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+    }
+  
+    #botao2{
+    background-color: D9D9D9;
+    width: 25%;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+    margin-left: 5%;
+      }
+  
+      #contBotao2{
+          width: 100%;     
+          margin-top: 5%;
+          
+         
+         
+      }
+  
+      #colBotao2{
+          margin-left: 30%;       
+          width: 100%;                  
+      }
+  
