@@ -1,71 +1,73 @@
-body{
-   background-color: whitesmoke;
-   margin: 0px;
-   padding: 0px;
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
 }
 
-#bar1{
+#bar1 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     background-color: #9EDC4B;
-    width: 100%;    
-   margin-top: -08px;
-   height: 10vh;
+    width: 100%;
+    margin-top: -08px;
+    height: 10vh;
 }
 
-#itensBar1{
+#itensBar1 {
     margin-top: 20px;
     display: flex;
-    align-items: center;  
-    height: 5vh;    
+    align-items: center;
+    height: 5vh;
 
 }
 
 
-#logoBar{ 
-   
+#logoBar {
+
     padding-left: 5%;
     margin-top: 5px;
-    height: 8vh;  
+    height: 8vh;
     width: 90px;
 
 }
-#areaBuscar{      
-    margin-left: 3%;
-        background-color:white;
-        border:solid 1px;
-        border-radius:15px;
-        width:200px;
-        height: 3vh;
-      }  
 
-#IconLupa{
-    
- 
+#areaBuscar {
+    margin-left: 3%;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 200px;
+    height: 3vh;
+}
+
+#IconLupa {
+
+
     height: 5vh;
 }
 
-#iconBuy{    
-  
+#iconBuy {
+
     height: 4vh;
 }
 
-#iconCadastro{    
+#iconCadastro {
     margin-left: 5%;
-   
-    height: 4vh;;
+
+    height: 4vh;
+    ;
 }
 
 
 
-#bar2{
+#bar2 {
     background-color: #9EDC4B;
     width: 100%;
-    height: 05vh;          
+    height: 05vh;
     display: none;
 }
 
-.h1{
+.h1 {
     margin-top: 90%;
 }
 
@@ -73,46 +75,46 @@ body{
 
 
 
-#botao1{
-  background-color: #9EDC4B;
-  width: 25%;
-  height: 40px;
-  border-radius: 10%;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 140%;
-  }
+#botao1 {
+    background-color: #9EDC4B;
+    width: 25%;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+}
 
-  #botao2{
-  background-color: #9EDC4B;
-  width: 25%;
-  height: 40px;
-  border-radius: 10%;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 140%;
-  margin-left: 5%;
-    }
+#botao2 {
+    background-color: #9EDC4B;
+    width: 25%;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+    margin-left: 5%;
+}
 
-    #contBotao{
-        display: flex;       
-        margin-top: 2%;
-       
-       
-    }
+#contBotao {
+    display: flex;
+    margin-top: 2%;
 
-    #colBotao{
-        margin-left: 30%;       
-        width: 100%;                  
-    }
 
-    #banner1{
-       width: 100%;
-        height: 300px;
-    }
+}
 
-    
-  #botao3{
+#colBotao {
+    margin-left: 30%;
+    width: 100%;
+}
+
+#banner1 {
+    width: 100%;
+    height: 300px;
+}
+
+
+#botao3 {
     background-color: #9EDC4B;
     width: 100%;
     height: 80px;
@@ -121,20 +123,57 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 140%;
     margin-left: 5%;
-      }
+}
 
-    .line{
-        width: 100%;
-        height: 2px;
-        background-color: black;
-    }
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
 
-    #contBotao3{
-        margin-top: 2%;
-    }
+#contBotao3 {
+    margin-top: 2%;
+}
 
+.card {
+    margin-left: 15%;
+    display: inline-block;
+}
 
- 
+.btn {
+    background-color: #9EDC4B;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: 2px dashed #9EDC4B;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    width: 100%;
+}
 
+.btn span:last-child {
+    display: none;
+}
 
+.btn:hover {
+    transition: .4s;
+    border: 2px dashed #9EDC4B;
+    background-color: #fff;
+    color: #9EDC4B;
+}
 
+.btn:active {
+    background-color: #9EDC4B;
+}
+footer{
+    background-color: #9EDC4B;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+}
+footer #imgF{
+    height: 250px;
+}
