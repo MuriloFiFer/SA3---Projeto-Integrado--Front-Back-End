@@ -1,481 +1,626 @@
 body {
-  background-color: whitesmoke;
-  margin: 0px;
-  padding: 0px;
-}
-
-#bar1 {
-  display: flex;
-  justify-content: center;
-  background-color: #9EDC4B;
-  width: 100%;
-  margin-top: -08px;
-  height: 10vh;
-}
-
-#itensBar1 {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  height: 5vh;
-
-}
-
-
-#logoBar {
-
-  padding-left: 5%;
-  margin-top: 5px;
-  height: 8vh;
-  width: 90px;
-
-}
-
-#areaBuscar {
-  margin-left: 3%;
-  background-color: white;
-  border: solid 1px;
-  border-radius: 15px;
-  width: 200px;
-  height: 3vh;
-}
-
-#IconLupa {
-
-
-  height: 5vh;
-}
-
-#iconBuy {
-
-  height: 4vh;
-}
-
-#iconCadastro {
-  margin-left: 5%;
-
-  height: 4vh;
-  ;
-}
-
-
-
-
-
-.h1 {
-  margin-top: 90%;
-}
-
-
-
-
-
-#botao1 {
-  background-color: #9EDC4B;
-  width: 25%;
-  height: 40px;
-  border-radius: 10%;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 140%;
-}
-
-#botao2 {
-  background-color: #9EDC4B;
-  width: 25%;
-  height: 40px;
-  border-radius: 10%;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 140%;
-  margin-left: 5%;
-}
-
-#contBotao {
-  display: flex;
-  margin-top: 2%;
-
-
-}
-
-#colBotao {
-  margin-left: 30%;
-  width: 100%;
-}
-
-#banner1 {
-  width: 100%;
-  height: 300px;
-}
-
-
-#botao3 {
-  background-color: #9EDC4B;
-  width: 100%;
-  height: 80px;
-  border-radius: 10%;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 140%;
-  margin-left: 5%;
-}
-
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-}
-
-#contBotao3 {
-  margin-top: 2%;
-}
-
-.card {
-  margin-left: 15%;
-  display: inline-block;
-}
-
-
-/** css  botões "Nossos serviços **/
-.btn {
-  background-color: #9EDC4B;
-  padding: 14px 40px;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-  border: 2px dashed #9EDC4B;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: .4s;
-  width: 100%;
-}
-
-.btn span:last-child {
-  display: none;
-}
-
-.btn:hover {
-  transition: .4s;
-  border: 2px dashed #9EDC4B;
-  background-color: #fff;
-  color: #9EDC4B;
-}
-
-.btn:active {
-  background-color: #9EDC4B;
-}
-
-
-
-/**  INICIO FOOTER  **/
-
-footer {
-  background-color: #9EDC4B;
-  width: 100%;
-  height: 650px; 
-}
-
-
-
-footer .img{
-  text-align: center;
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+  }
   
-}
-footer #imgF {
-  height: 250px;
-  text-align: center;
-}
-
-footer .lineV{
-  background: black;
-  width: 2px;
-  height: 50%;
-  margin-left: 50%;
+  #bar1 {
+    display: flex;
+    justify-content: center;
+    background-color: #9EDC4B;
+    width: 100%;
+    margin-top: -08px;
+    height: 10vh;
+  }
   
-
-}
-.ladoD {
-  display: flex;
-  margin-left: 55%;
-  justify-content: space-around;
-  height: 20px;
-}
-
-
-/* CSS midias */
-
-
-.socials-container {
-  width: fit-content;
-  height: fit-content;
-  gap: 25px;
-  display: flex;
-  margin-left: 18%;
-  padding: 20px 40px;
-  background-color:  #9EDC4B;
-}
-.social {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-.twitter:hover {
-  background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
-}
-.facebook:hover {
-  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
-}
-.google-plus:hover {
-  background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
-}
-.instagram:hover {
-  background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-.social svg {
-  fill: black;
-  height: 20px;
-}
-
-
-
-
-
-
-
-/** ----------------------------------------------------------------------------------------**/
-/** css cadastro e login **/
-.wrapper {
-  --input-focus: #9EDC4B;
-  --font-color: #323232;
-  --font-color-sub: #323232;
-  --bg-color: #fff;
-  --bg-color-alt: #9EDC4B;
-  --main-color: #323232;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20%;
-
-}
-
-/* switch card */
-.switch {
-  transform: translateY(-200px);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  width: 50px;
-  height: 20px;
-}
-
-.card-side::before {
-  position: absolute;
-  content: 'Log in';
-  left: -70px;
-  top: 0;
-  width: 100px;
-  text-decoration: underline;
-  color: var(--font-color);
-  font-weight: 600;
-}
-
-.card-side::after {
-  position: absolute;
-  content: 'Sign up';
-  left: 70px;
-  top: 0;
-  width: 100px;
-  text-decoration: none;
-  color: var(--font-color);
-  font-weight: 600;
-}
-
-.toggle {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--bg-colorcolor);
-  transition: 0.3s;
-}
-
-.slider:before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  border: 2px solid var(--main-color);
-  border-radius: 5px;
-  left: -2px;
-  bottom: 2px;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 0 var(--main-color);
-  transition: 0.3s;
-}
-
-.toggle:checked+.slider {
-  background-color: var(--input-focus);
-}
-
-.toggle:checked+.slider:before {
-  transform: translateX(30px);
-}
-
-.toggle:checked~.card-side:before {
-  text-decoration: none;
-}
-
-.toggle:checked~.card-side:after {
-  text-decoration: underline;
-}
-
-/* css card */
-
-.flip-card__inner {
-  width: 300px;
-  height: 350px;
-  position: relative;
-  background-color: transparent;
-  perspective: 1000px;
-  /* width: 100%;
-      height: 100%; */
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.toggle:checked~.flip-card__inner {
-  transform: rotateY(180deg);
-}
-
-.toggle:checked~.flip-card__front {
-  box-shadow: none;
-}
-
-
-.flip-card__front,
-.flip-card__back {
-  padding: 20px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background: #9EDC4B;
-  /** Back Ground do card **/
-  gap: 20px;
-  border-radius: 5px;
-  border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
-
-
-}
-
-.flip-card__back {
-  width: 100%;
-  transform: rotateY(180deg);
-}
-
-.flip-card__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.title {
-  margin: 20px 0 20px 0;
-  font-size: 25px;
-  font-weight: 900;
-  text-align: center;
-  color: var(--main-color);
-}
-
-.flip-card__input {
-  width: 250px;
-  height: 40px;
-  border-radius: 5px;
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
-  box-shadow: 4px 4px var(--main-color);
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--font-color);
-  padding: 5px 10px;
-  outline: none;
-}
-
-.flip-card__input::placeholder {
-  color: var(--font-color-sub);
-  opacity: 0.8;
-}
-
-.flip-card__input:focus {
-  border: 2px solid var(--input-focus);
-}
-
-.flip-card__btn:active,
-.button-confirm:active {
-  box-shadow: 0px 0px var(--main-color);
-  transform: translate(3px, 3px);
-}
-
-.flip-card__btn {
-  margin: 20px 0 20px 0;
-  width: 120px;
-  height: 40px;
-  border-radius: 5px;
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
-  box-shadow: 4px 4px var(--main-color);
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--font-color);
-  cursor: pointer;
-}
+  #itensBar1 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+  
+  }
+  
+  
+  #logoBar {
+  
+    padding-left: 5%;
+    margin-top: 5px;
+    height: 8vh;
+    width: 90px;
+  
+  }
+  
+  #areaBuscar {
+    margin-left: 3%;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 200px;
+    height: 3vh;
+  }
+  
+  #IconLupa {
+  
+  
+    height: 5vh;
+  }
+  
+  #iconBuy {
+  
+    height: 4vh;
+  }
+  
+  #iconCadastro {
+    margin-left: 5%;
+  
+    height: 4vh;
+    ;
+  }
+  
+  .cardT{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1%;
+  }
+  
+  .cardM{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  button {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: #9EDC4B;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 500;
+    border-radius: 5%;
+  }
+  
+  button span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 4px solid #9EDC4B;
+  }
+  
+  button span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: var(--lightgray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+  
+  button:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #9EDC4B;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button:active span::before {
+    background: #9EDC4B;
+  }
+  
+  
+  
+  .h1 {
+    margin-top: 90%;
+  }
+  
+  
+  
+  #colBotao {
+    margin-left: 30%;
+    width: 100%;
+  }
+  
+  #banner1 {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+  }
+  
+  #contBotao3 {
+    margin-top: 2%;
+  }
+  
+  .card {
+    margin-left: 15%;
+    display: inline-block;
+  }
+  
+  
+  /** css  botões "Nossos serviços **/
+  .btn {
+    background-color: #9EDC4B;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: 2px dashed #9EDC4B;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+    width: 100%;
+  }
+  
+  
+  .btn span:last-child {
+    display: none;
+  }
+  
+  .btn:hover {
+    transition: .4s;
+    border: 2px dashed #9EDC4B;
+    background-color: #fff;
+    color: #9EDC4B;
+  }
+  
+  .btn:active {
+    background-color: #9EDC4B;
+  }
+  
+  
+  
+  /**  INICIO FOOTER  **/
+  
+  footer {
+    background-color: #9EDC4B;
+    width: 100%;
+    height: 650px; 
+    margin-top: 10%;
+  }
+  
+  footer .img{
+    text-align: center;
+    
+  }
+  footer #imgF {
+    height: 250px;
+    text-align: center;
+  }
+  
+  .Pagamentos {
+    display: flex;
+    justify-content: space-evenly;
+    height: 20px;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .global{
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  /* CSS midias */
+  
+  
+  .socials-container {
+    width: fit-content;
+    height: fit-content;
+    gap: 25px;
+    display: flex;
+    margin-left: 40%;
+    align-items: center;
+    justify-content: center;
+    background-color:  #9EDC4B;
+  }
+  .social {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .twitter:hover {
+    background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+  }
+  .facebook:hover {
+    background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+  }
+  .google-plus:hover {
+    background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+  }
+  .instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .social svg {
+    fill: black;
+    height: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /** ----------------------------------------------------------------------------------------**/
+  /** css cadastro e login **/
+  .wrapper {
+    --input-focus: #9EDC4B;
+    --font-color: #323232;
+    --font-color-sub: #323232;
+    --bg-color: #fff;
+    --bg-color-alt: #9EDC4B;
+    --main-color: #323232;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+  
+  }
+  
+  /* switch card */
+  .switch {
+    transform: translateY(-200px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50px;
+    height: 20px;
+  }
+  
+  .card-side::before {
+    position: absolute;
+    content: 'Log in';
+    left: -70px;
+    top: 0;
+    width: 100px;
+    text-decoration: underline;
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .card-side::after {
+    position: absolute;
+    content: 'Sign up';
+    left: 70px;
+    top: 0;
+    width: 100px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-colorcolor);
+    transition: 0.3s;
+  }
+  
+  .slider:before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    left: -2px;
+    bottom: 2px;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 0 var(--main-color);
+    transition: 0.3s;
+  }
+  
+  .toggle:checked+.slider {
+    background-color: var(--input-focus);
+  }
+  
+  .toggle:checked+.slider:before {
+    transform: translateX(30px);
+  }
+  
+  .toggle:checked~.card-side:before {
+    text-decoration: none;
+  }
+  
+  .toggle:checked~.card-side:after {
+    text-decoration: underline;
+  }
+  
+  /* css card */
+  
+  .flip-card__inner {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    background-color: transparent;
+    perspective: 1000px;
+    /* width: 100%;
+        height: 100%; */
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .toggle:checked~.flip-card__inner {
+    transform: rotateY(180deg);
+  }
+  
+  .toggle:checked~.flip-card__front {
+    box-shadow: none;
+  }
+  
+  
+  .flip-card__front,
+  .flip-card__back {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #9EDC4B;
+    /** Back Ground do card **/
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+  
+  
+  }
+  
+  .flip-card__back {
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .title {
+    margin: 20px 0 20px 0;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--main-color);
+  }
+  
+  .flip-card__input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .flip-card__input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .flip-card__input:focus {
+    border: 2px solid var(--input-focus);
+  }
+  
+  .flip-card__btn:active,
+  .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+  
+  .flip-card__btn {
+    margin: 20px 0 20px 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  
+  /*meu codigo */
+  #textoRacao{
+    margin-top: 90px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #preco{
+    margin-top:20px;
+  }
+  
+  .button {
+    margin-top: 20px;
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #9EDC4B;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #000000;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #000000;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #9EDC4B;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  
+  
+  
