@@ -26,7 +26,8 @@
     font-weight: bold;
     border: 2px solid transparent;
     border-radius: 15px;
-    cursor: pointer;        
+    cursor: pointer;    
+      
   }
 
  /* alinhamento da palavra "Filtro" dentro do botão */
@@ -34,7 +35,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: -4%;
+    margin-top: -4%;  
+    text-decoration-color: #1a1d15;
   }
  
   
