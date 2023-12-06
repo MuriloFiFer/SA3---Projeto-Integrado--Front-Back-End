@@ -191,6 +191,7 @@ body {
   
   
   
+  
   /**  INICIO FOOTER  **/
   
   footer {
@@ -619,6 +620,12 @@ body {
   
   .button:hover:before {
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+
+
+  
+  #bt1{
+    text-decoration: none;
   }
   
   

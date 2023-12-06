@@ -26,8 +26,17 @@
     font-weight: bold;
     border: 2px solid transparent;
     border-radius: 15px;
-    cursor: pointer;
+    cursor: pointer;        
   }
+
+ /* alinhamento da palavra "Filtro" dentro do botão */
+  #btFiltro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -4%;
+  }
+ 
   
   .dropdown-content {
     display: none;
@@ -47,6 +56,7 @@
     text-decoration: none;
     display: block;
     transition: 0.1s;
+    
   }
   
   .dropdown-content a:hover {
@@ -77,8 +87,7 @@
 
   /* cards buscar */
 
-  #cardBuscar1{
-   
+  #cardBuscar1{   
       display: flex;
       justify-content: center;
       align-items: center;
@@ -90,8 +99,7 @@
       }
 
       
-  #cardBuscar2{
-   
+  #cardBuscar2{   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,6 +157,7 @@
     font-size: .9rem;
     color: rgb(33, 32, 32);
   }
+
   .card button {
     background-color: #9EDC4B;
     height: 30px;
@@ -161,10 +170,23 @@
     border-radius: 8px;
     margin-left: -05%;    
   }
-  .card button:hover {
-    background-color: #137de8;
-    cursor: pointer;
-  }
+  
+ 
+  
+/*  butão comprar css para animação */
+ button:hover {
+      transition: .2s;
+      border: 2px dashed #9EDC4B;
+      background-color: #fff;
+      color: #9EDC4B;
+      display: flex;    
+      justify-content: space-around;
+      align-items: center;
+    }
+
+   
+
+  
   
          
  img{
@@ -220,6 +242,13 @@
     margin-top: 10%;
      margin-left: 13%;
     width: 150px;
-    height: 150px;
-    
+    height: 150px;    
   }
+ 
+a {
+  text-decoration: none;
+}
+
+
+
+
