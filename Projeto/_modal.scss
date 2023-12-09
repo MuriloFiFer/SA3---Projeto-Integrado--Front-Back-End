@@ -1,0 +1,101 @@
+// Desativa a regra de estilo 'function-disallowed-list' do stylelint.
+// .modal-open      - classe do body para impedir o rolar da página
+// .modal           - contêiner para rolar dentro
+// .modal-dialog    - invólucro de posicionamento para o modal real
+// .modal-content   - modal real com fundo, cantos, etc.
+
+// Contêiner no qual o modal rola
+.modal {
+  // scss-docs-start modal-css-vars
+  // Variáveis CSS para personalização do modal
+  --#{$prefix}modal-zindex: #{$zindex-modal};
+  --#{$prefix}modal-width: #{$modal-md};
+  // ... (outras variáveis)
+  // scss-docs-end modal-css-vars
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--#{$prefix}modal-zindex);
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  // Impede o Chrome no Windows de adicionar um contorno de foco. Para mais detalhes, veja
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+  // Deliberadamente não usamos `-webkit-overflow-scrolling: touch;` devido a um
+  // bug irritante no iOS Safari: https://bugs.webkit.org/show_bug.cgi?id=158342
+  // Veja também https://github.com/twbs/bootstrap/issues/17695
+}
+
+// Invólucro de posicionamento do modal com preenchimento inferior
+.modal-dialog {
+  // ... (outros estilos)
+  // Ao desvanecer o modal, anima para deslizar para baixo
+  .modal.fade & {
+    @include transition($modal-transition);
+    transform: $modal-fade-transform;
+  }
+  .modal.show & {
+    transform: $modal-show-transform;
+  }
+  // Ao tentar fechar, anima o foco para escalar
+  .modal.modal-static & {
+    transform: $modal-scale-transform;
+  }
+}
+
+// Modal real
+.modal-content {
+  // ... (outros estilos)
+  // Remove o contorno de foco do modal aberto
+  outline: 0;
+}
+
+// Plano de fundo do modal
+.modal-backdrop {
+  // scss-docs-start modal-backdrop-css-vars
+  // Variáveis CSS para personalização do plano de fundo do modal
+  --#{$prefix}backdrop-zindex: #{$zindex-modal-backdrop};
+  --#{$prefix}backdrop-bg: #{$modal-backdrop-bg};
+  --#{$prefix}backdrop-opacity: #{$modal-backdrop-opacity};
+  // scss-docs-end modal-backdrop-css-vars
+
+  @include overlay-backdrop(var(--#{$prefix}backdrop-zindex), var(--#{$prefix}backdrop-bg), var(--#{$prefix}backdrop-opacity));
+}
+
+// Cabeçalho do modal
+.modal-header {
+  // ... (outros estilos)
+  // Botão de fechar
+  .btn-close {
+    // ... (outros estilos)
+  }
+}
+
+// Texto do título no cabeçalho
+.modal-title {
+  // ... (outros estilos)
+}
+
+// Corpo do modal
+.modal-body {
+  // ... (outros estilos)
+}
+
+// Rodapé (para ações)
+.modal-footer {
+  // ... (outros estilos)
+}
+
+// Aumenta o modal
+@include media-breakpoint-up(sm) {
+  // ... (outros estilos)
+}
+
+// Descrição de tela cheia do modal para vários breakpoints
+@each $breakpoint in map-keys($grid-breakpoints) {
+  // ... (outros estilos)
+}
