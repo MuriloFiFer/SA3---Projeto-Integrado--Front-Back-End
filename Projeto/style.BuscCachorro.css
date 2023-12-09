@@ -121,15 +121,23 @@ body {
 }
 #telaFiltro{
   width: 50%;
-  height: 500px;
+  height: 400px;
   margin-left: 10%;
   margin-top:28px;
   font-family: "Arial";
+ 
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #757474c8;
+}
 
-  
+#textoFiltro{
+  margin-top: 10%;
+  color: black
+}
+ 
   
   /* justify-content */
-  }
+  
 
 
 p{
@@ -434,21 +442,22 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
+ 
 #bar1 {
   display: flex;
   justify-content: center;
   background-color: #9EDC4B;
   width: 100%;
   margin-top: -08px;
-  height: 10vh;
+  height: 120px;
 }
 
 #itensBar1 {
-  margin-top: 20px;
+  margin-top: 13px;
   display: flex;
   align-items: center;
-  height: 5vh;
+  height:100px;
+  
 
 }
 
@@ -457,7 +466,7 @@ body {
 
   padding-left: 5%;
   margin-top: 5px;
-  height: 8vh;
+  height: 100px;
   width: 90px;
 
 }
@@ -468,23 +477,23 @@ body {
   border: solid 1px;
   border-radius: 15px;
   width: 200px;
-  height: 3vh;
+  height: 50px;
 }
 
 #IconLupa {
 
 
-  height: 5vh;
+  height: 80px;
 }
 
 #iconBuy {
 
-  height: 4vh;
+  height: 40px;
 }
 
 #iconCadastro {
-  margin-left: 5%;
+  margin-left: 10%;
 
-  height: 4vh;
+  height: 45px;
   ;
 }
