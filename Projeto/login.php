@@ -1,24 +1,45 @@
 <?php
-header('Content-Type: application/json');
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Obter dados do corpo da solicitação
-    $data = json_decode(file_get_contents('php://input'), true);
+// Conectar ao banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "bancoanimart"; // Substitua pelo nome do seu banco de dados
 
-    // Simulação de armazenamento de usuários
-    $users = [];
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Adicionar validações e lógica de login real aqui
-    $user = array_filter($users, function ($u) use ($data) {
-        return $u['email'] === $data['email'] && $u['password'] === $data['password'];
-    });
+// Verificar a conexão
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-    if (count($user) > 0) {
-        echo json_encode(['success' => true, 'message' => 'Login bem-sucedido.']);
+// Recuperar dados do formulário
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+// Usar instruções preparadas para evitar injeção de SQL
+$sql = $conn->prepare("SELECT * FROM users WHERE email=?");
+$sql->bind_param("s", $email);
+
+$sql->execute();
+$result = $sql->get_result();
+
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $storedPassword = $row['password'];
+
+    // Verificar se a senha fornecida corresponde à senha armazenada
+    if (password_verify($password, $storedPassword)) {
+        echo "Login bem-sucedido!";
     } else {
-        echo json_encode(['success' => false, 'message' => 'Credenciais inválidas.']);
+        echo "Erro ao fazer login. Verifique suas credenciais.";
     }
 } else {
-    echo json_encode(['success' => false, 'message' => 'Método não permitido.']);
+    echo "Erro ao fazer login. Verifique suas credenciais.";
 }
+
+$sql->close();
+$conn->close();
 ?>
