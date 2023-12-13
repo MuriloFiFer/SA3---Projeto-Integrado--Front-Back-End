@@ -1,38 +1,49 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
-// Conectar ao banco de dados
+// Conecta ao banco
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bancoanimart"; // nome do banco
-
+$username = "postgres";
+$password = "postgres";
+$dbname = "murilo"; // nome do banco
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar a conexão
+// Verifica a conexão
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-// Recuperar dados do formulário
-$name = $_POST['name'];
-$email = $_POST['email'];
-$password = $_POST['password'];
+// Verifica se o formulário foi submetido
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Coleta os dados do formulário
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $password = password_hash($_POST["password"], PASSWORD_DEFAULT); // Hash da senha para segurança
 
-// Hash da senha (recomendado para segurança)
-$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    // Query SQL para inserir os dados no banco de dados
+    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)";
 
-// Usar instruções preparadas para evitar injeção de SQL
-$sql = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
-$sql->bind_param("sss", $name, $email, $hashedPassword);
+    // Cria uma declaração preparada
+    $stmt = $conn->prepare($sql);
 
-if ($sql->execute()) {
-    echo "Usuário registrado com sucesso!";
-} else {
-    echo "Erro ao registrar usuário: " . $sql->error;
+    // Verifica se a declaração preparada foi bem-sucedida
+    if ($stmt === false) {
+        die("Erro na declaração preparada: " . $conn->error);
+    }
+
+    // Binda os parâmetros
+    $stmt->bind_param("sss", $name, $email, $password);
+
+    // Executa a declaração preparada
+    if ($stmt->execute()) {
+        echo "Usuário registrado com sucesso!";
+    } else {
+        echo "Erro ao registrar o usuário: " . $stmt->error;
+    }
+
+    // Fecha a declaração preparada
+    $stmt->close();
 }
 
-$sql->close();
+// Fecha a conexão com o banco de dados
 $conn->close();
 ?>

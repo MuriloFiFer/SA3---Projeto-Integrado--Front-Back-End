@@ -1,18 +1,22 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
-// Configurações de conexão com o banco de dados
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bancoanimart"; //nome do banco
-
-// Criar conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar a conexão
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+$username = "postgres";
+$password = "postgres";
+$dbname = "murilo"; // nome do banco
+try {
+    // sgbd:host;port;dbname
+    // usuario
+    // senha
+    // errmode
+    $pdo = new PDO(
+        "pgsql:host=$servername;port=5432;dbname=$username",
+        $password,
+        $dbname,
+        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+    );
+ //   echo "Conectado no banco de dados!!!";
+} catch (PDOException $e) {
+    echo "Falha ao conectar ao banco de dados. <br/>";
+    die($e->getMessage());
 }
-?>

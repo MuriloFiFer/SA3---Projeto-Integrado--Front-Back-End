@@ -1,45 +1,44 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+session_start();
+require_once('config.php');
+
 
 // Conectar ao banco de dados
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bancoanimart"; // Substitua pelo nome do seu banco de dados
+$username = "postgres";
+$password = "postgres";
+$dbname = "murilo"; //
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
-// Verificar a conexão
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+    $sql = "SELECT * FROM usuarios WHERE email = ?";
+    $stmt = $conn->prepare($sql);
 
-// Recuperar dados do formulário
-$email = $_POST['email'];
-$password = $_POST['password'];
-
-// Usar instruções preparadas para evitar injeção de SQL
-$sql = $conn->prepare("SELECT * FROM users WHERE email=?");
-$sql->bind_param("s", $email);
-
-$sql->execute();
-$result = $sql->get_result();
-
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $storedPassword = $row['password'];
-
-    // Verificar se a senha fornecida corresponde à senha armazenada
-    if (password_verify($password, $storedPassword)) {
-        echo "Login bem-sucedido!";
-    } else {
-        echo "Erro ao fazer login. Verifique suas credenciais.";
+    if ($stmt === false) {
+        die("Erro na declaração preparada: " . $conn->error);
     }
-} else {
-    echo "Erro ao fazer login. Verifique suas credenciais.";
+
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row["senha"])) {
+            // Login bem-sucedido
+            $_SESSION["user_id"] = $row["id"]; // Você pode armazenar outras informações na sessão conforme necessário
+            echo "Login bem-sucedido!";
+        } else {
+            echo "Senha incorreta!";
+        }
+    } else {
+        echo "Usuário não encontrado!";
+    }
+
+    $stmt->close();
 }
 
-$sql->close();
 $conn->close();
 ?>
