@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniMart - Sua Loja Online! -CADASTRO- </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="bar1">
+        <div id="itensBar1">
+            <a href="index.html"><img id="logoBar" src="img/logo.png" alt="logo" /></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="card-switch">
+                <label class="switch">
+                    <input class="toggle" type="checkbox">
+                    <span class="slider"></span>
+                    <span class="card-side"></span>
+                    <div class="flip-card__inner">
+                        <div class="flip-card__front">
+                            <div class="title">Log in</div>
+                            <form action="" class="flip-card__form flip-card__form-login">
+                                <input type="email" placeholder="EMAIL" name="email" class="flip-card__input">
+                                <input type="password" placeholder="SENHA" name="password" class="flip-card__input">
+                                <button class="flip-card__btn" onclick="login()">IR!</button>
+                            </form>
+                        </div>
+                        <div class="flip-card__back">
+                            <div class="title">Sign up</div>
+                            <form action="" class="flip-card__form flip-card__form-register">
+                                <input type="name" placeholder="NOME" class="flip-card__input">
+                                <input type="email" placeholder="EMAIL" name="email" class="flip-card__input">
+                                <input type="password" placeholder="SENHA" name="password" class="flip-card__input">
+                                <button class="flip-card__btn" onclick="register()">CONFIRMAR!</button>
+                            </form>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div id="userInfo" style="display: none;">
+            <p>Usuário Logado: <span id="loggedInUser"></span></p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div class="line"></div><br><br>
+    </div>
+
+    <footer>
+        <div class="img"><img src="img/logo.png" id="imgF" alt="Logo" /></div>
+        <br /><br /><br />
+        <div class="global">
+            <h3>Siga Animart nas redes sociais</h3>
+            <br />
+            <h3>E fique por dentro das nossas novidades e promoções.</h3>
+            <br />
+            <div class="socials-container" id="midias">
+                <a href="#" class="social twitter">
+                    <svg height="1em" viewBox="0 0 512 512">
+                        <!-- Ícone do Twitter -->
+                    </svg>
+                </a>
+                <a href="#" class="social facebook">
+                    <svg height="1em" viewBox="0 0 320 512">
+                        <!-- Ícone do Facebook -->
+                    </svg>
+                </a>
+                <a href="#" class="social google-plus">
+                    <svg height="1em" viewBox="0 0 640 512">
+                        <!-- Ícone do Google Plus -->
+                    </svg>
+                </a>
+                <a href="#" class="social instagram">
+                    <svg height="1em" viewBox="0 0 448 512">
+                        <!-- Ícone do Instagram -->
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+////////
+rascunho funcional
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniMart - Sua Loja Online! -CADASTRO-</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav id="bar1">
+    <div id="itensBar1">
+      <a href="index.html"><img id="logoBar" src="img/logo.png" alt="logo" /></a>                                                                                                                                         
+      <img id="iconCadastro" src="img/IconCadastro.png" alt="Cadastro" /></a>
+         <!-- Adicione um indicador de usuário logado -->
+    <div id="user-indicator" style="display: none;">
+      <span id="logged-user"></span>
+      <button id="logout-btn">Logout</button>
+  </div>
+    </div>
+  </nav>
+
+    <div class="container">
+
+        <div class="wrapper">
+            <div class="card-switch">
+                <label class="switch">
+                    <input class="toggle" type="checkbox">
+                    <span class="slider"></span>
+                    <span class="card-side"></span>
+                    <div class="flip-card__inner">
+                        <div class="flip-card__front">
+                            <!-- Card LOGIN -->
+                            <div class="title">Log in</div>
+                            <form action="" class="flip-card__form-login">
+                                <input type="email" placeholder="EMAIL" name="email" class="flip-card__input">
+                                <input type="password" placeholder="SENHA" name="password" class="flip-card__input">
+                                <button class="flip-card__btn">IR!</button>
+                            </form>
+                            <div class="login-messages"></div>
+                        </div>
+                        <div class="flip-card__back">
+                            <!-- Card Sign Up -->
+                            <div class="title">Sign up</div>
+                            <form action="" class="flip-card__form-register">
+                                <input type="name" placeholder="NOME" name="name" class="flip-card__input">
+                                <input type="email" placeholder="EMAIL" name="email" class="flip-card__input">
+                                <input type="password" placeholder="SENHA" name="password" class="flip-card__input">
+                                <button class="flip-card__btn">CONFIRMAR!</button>
+                            </form>
+                            <div class="register-messages"></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const users = []; // Simulação de armazenamento de usuários
 
