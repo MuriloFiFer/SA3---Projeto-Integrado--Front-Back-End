@@ -16,13 +16,16 @@
 
   <nav id="bar1">
     <div id="itensBar1">
-      <a href=""><img id="logoBar" src="img/logo.png" alt="logo" /></a>
-      <input id="areaBuscar" type="text" id="txtBusca" placeholder="Buscar..." />
-      <a href="buscar.html"><img id="IconLupa" src="img/iconLupa.png" alt="Buscar" /></a>
-      <a href="buy.html"><img id="iconBuy" src="img/iconBuy.png" alt="buy" usemap="#imageBuy-map" id="imgBuy" /></a>
-      <a href="cadastro.html"><img id="iconCadastro" src="img/IconCadastro.png" alt="Cadastro" /></a>
+      <a href="index.html"><img id="logoBar" src="img/logo.png" alt="logo" /></a>                                                                                                                                         
+      <img id="iconCadastro" src="img/IconCadastro.png" alt="Cadastro" /></a>
+         <!-- Adicione um indicador de usuário logado -->
+    <div id="user-indicator" style="display: none;">
+      <span id="logged-user"></span>
+      <button id="logout-btn">Logout</button>
+  </div>
     </div>
   </nav>
+ 
 
 
   <br><br><br><br><br>
@@ -188,5 +191,7 @@
 
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
